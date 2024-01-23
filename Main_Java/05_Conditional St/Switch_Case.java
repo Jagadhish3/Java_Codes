@@ -42,12 +42,22 @@ class Switch_Case {
         //         break;
         //     }
         //     System.out.println(output);
-        String day = "Sunday";
-        switch(day){
-            case "Monday","Tuesday" -> output="Class From 7 to 9 PM";
-            case "Wednesday" -> System.out.println("Class From 7 to 8 PM");
-            default -> System.out.println("No Class");
-         } //No use of break statements
         
+        
+        
+        String day = "Sunday";
+        // switch(day){
+        //     case "Monday","Tuesday" -> output="Class From 7 to 9 PM";
+        //     case "Wednesday" -> System.out.println("Class From 7 to 8 PM");//can use : and yield in place of -> and System.out.println
+        //     default -> System.out.println("No Class");
+        //  } //No use of break statements
+        
+        String output="";
+        output=switch(day){
+            case "Monday","Tuesday" -> "Class From 7 to 9 PM";
+            case "Wednesday" -> "Class From 7 to 8 PM";
+            default -> "No Class";
+         }; 
+        System.out.println(output);
     }
 }
