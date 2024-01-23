@@ -43,12 +43,11 @@ class Switch_Case {
         //     }
         //     System.out.println(output);
         String day = "Sunday";
-        String output="";
         switch(day){
             case "Monday","Tuesday" -> output="Class From 7 to 9 PM";
             case "Wednesday" -> System.out.println("Class From 7 to 8 PM");
             default -> System.out.println("No Class");
          } //No use of break statements
-        //System.out.println(output);
+        
     }
 }
