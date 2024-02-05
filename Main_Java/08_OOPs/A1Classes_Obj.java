@@ -4,10 +4,14 @@ class Calculate{
         int result = x+y;
         return result;
     }
+    public int Add(int x,int y,int z){
+        int result = x+y+z;
+        return result;
+    }
 
     public double Add(double x,double y){
-        
-        return 0;
+        double result = x+y;
+        return result;
     }
 }
 
@@ -21,7 +25,9 @@ class A1Classes_Obj {
         Calculate Ref = new Calculate();
 
         int Res=Ref.Add(1,5);
+        double Res1=Ref.Add(1,5);
         System.out.println(Res);
+        System.out.println(Res1);
     }
 }
 
