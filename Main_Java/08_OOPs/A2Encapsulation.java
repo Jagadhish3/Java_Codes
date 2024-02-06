@@ -1,5 +1,5 @@
 class Bank{
-    private int accNum=1234;
+    private int accNum;
     private String MyName="Sri";
     private int amount;
 
@@ -11,17 +11,24 @@ class Bank{
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
     public String getMyName(){
         return MyName;
     }
 
-    public void setName(String Name){
-        MyName=Name;
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
+
+    public void setAccNum(int accNum) {
+        //accNum = accNum;//Confusion in compiler so use this
+        this.accNum=accNum;
+    }
+
+    public void setMyName(String myName) {
+        MyName = myName;
+    }
+
+    
 }
 
 class A2Encapsulation {
@@ -32,7 +39,9 @@ class A2Encapsulation {
         // Obj.accNum = 23451;
         // Obj.myName="Sriram";
         // Obj.amount=50000;
-        System.out.println(Obj.getAccNum()+" "+Obj.getMyName());
+        Obj.setAccNum(2222);
+        System.out.println(Obj.getAccNum());
+        //System.out.println(Obj.getAccNum()+" "+Obj.getMyName());
         //System.out.println(Obj.accNum + " " + Obj.myName + " " + Obj.amount);
     }
 }
