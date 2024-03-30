@@ -4,13 +4,14 @@ public class A5Strings {
 
         String s1=new String("Hello");
         System.out.println(s1+" World");
-
+        StringBuilder sb=new StringBuilder(s1);
         s1.charAt(0);
         System.out.println(s1.charAt(0));
         System.out.println(s1.length());
         s1.replace('o','w');
         System.out.println(s1.replace('o','w'));
         System.out.println(s1.replace('l','o'));
+        System.out.println(sb.reverse());
     }
 }
 
