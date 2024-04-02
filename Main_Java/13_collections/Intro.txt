@@ -1,0 +1,8 @@
+
+//Collections framework provides a set of interfaces and classes to 
+//implement various data structures
+
+//collection interface is root interface of collection framework
+
+//the collections framework includes other interfaces as well like map,Iterator.and further these
+//interfaces may have subinterfaces
