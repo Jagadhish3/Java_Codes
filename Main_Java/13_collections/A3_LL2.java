@@ -28,7 +28,17 @@ public class A3_LL2 {
 
         ll1.addFirst("Jupiter");
         ll1.addLast("Saturn");
-
+        ll1.removeLast();
         System.out.println(ll1);
     }
 }
+// LinkedList
+// -> Implements List,Queue and Dequeue interface
+// -> Stores 3 values, (prev add,data,next add)
+// -> Provides doubly LL implementation
+// -> When an element is added, prev and next address are changed
+//ArrayList
+//-> Implements List Interface
+//-> Stores single value
+// -> Resizable array implementation
+// -> When an element is added, all elements after that position are shifted
