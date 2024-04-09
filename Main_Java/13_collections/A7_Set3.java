@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.TreeSet;
 public class A7_Set3 {
     public static void main(String[] args) {
@@ -8,12 +9,19 @@ public class A7_Set3 {
 
         // System.out.println(set1);
 
-        TreeSet<Integer> set2 = new TreeSet();
-        set2.add(5);
+        // TreeSet<Integer> set2 = new TreeSet();
+        // set2.add(5);
         
-        set1.addAll(set2);
+        // set1.addAll(set2);
 
-        System.out.println(set1);
+        // System.out.println(set1);
+
+        Iterator itr = set1.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+            
+            
+        }
     }
 }
 
